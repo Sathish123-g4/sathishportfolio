@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathish Kumar S | Portfolio</title>
+    <!-- Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb; /* Light grey-blue background for body */
+            color: #333;
+        }
+        header {
+            background-color: #d1d5db; /* Light grey background for header */
+            color: #333;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .profile-photo {
+            border-radius: 50%; /* Circular photo */
+            width: 300px; /* Larger size */
+            height: 300px;
+            margin-right: 20px;
+            border: 5px solid #ffffff;
+            transition: transform 0.3s ease;
+        }
+        .profile-photo:hover {
+            transform: scale(1.1);
+        }
+        h1 {
+            color: black; /* Black color for the name */
+            font-size: 2.5rem; /* Prominent size */
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+        h1 span {
+            display: inline-block;
+            transform: translateX(-100%);
+            animation: slideIn 2s ease-in-out forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        p {
+            color: black;
+            font-size: 1.2rem; /* Slightly smaller for the paragraph */
+            margin-top: 10px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #1e293b;
+        }
+        p {
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .skills, .projects, .contact {
+            margin-top: 30px;
+        }
+        .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li, .projects ul li {
+            margin: 5px 0;
+        }
+        .contact-options a {
+            text-decoration: none;
+            color: #2563eb;
+            margin-right: 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .contact-options a:hover {
+            color: #4f46e5;
+        }
+        .contact-options i {
+            font-size: 2rem; /* Size of the icons */
+            margin-right: 20px;
+            color: #333; /* Default icon color */
+            transition: color 0.3s ease;
+        }
+        .contact-options i:hover {
+            color: #2563eb; /* Hover color for icons */
+        }
+        footer {
+            background-color: #1e293b;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        /* Smooth transitions */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="your-photo.jpg" alt="Sathish Kumar" class="profile-photo">
+        <div>
+            <h1><span>Sathish Kumar S</span></h1>
+            <p>Aspiring Software Developer | Computer Science Student | Tester Intern at @Wyreflow</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Sathish Kumar S, a 4th-year computer science student passionate about technology and innovation.
+                I specialize in Data Structures and Algorithms, and I enjoy solving complex problems in C++. 
+                My journey includes hands-on experience in Full-Stack Development using modern tools like React.js and Node.js.
+                I have also worked on AI/ML projects using PyTorch, OpenCV, and other libraries.
+                My commitment to continuous learning drives me to explore new trends in technology.
+                Beyond coding, I take pride in teamwork and have led various group projects and NSS initiatives.
+                My goal is to contribute to impactful projects and connect with professionals to grow together.
+            </p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C++, Python, Java, JavaScript</li>
+                <li><strong>DSA with C++:</strong> In-depth understanding of Data Structures and Algorithms using C++, including topics like arrays, linked lists, trees, graphs, dynamic programming, and sorting algorithms.</li>
+                <li><strong>Web Development:</strong> HTML, CSS, React.js, Node.js, Express.js</li>
+                <li><strong>AI/ML:</strong> PyTorch, OpenCV, Numpy, Pandas, Matplotlib</li>
+                <li><strong>Databases:</strong> MongoDB, MySQL</li>
+                <li><strong>Tools:</strong> VS Code, Git</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Game of Vision Snake:</strong></li>
+                <p>This is a fun game project built using OpenCV and Python, where computer vision is used to track the user's movements. The snake follows the user’s hand through a webcam, allowing them to control the snake’s direction. The game incorporates image processing techniques to detect hand gestures, providing an interactive gaming experience.</p>
+                <br>
+
+                <li><strong>Yummy Eats:</strong></li>
+                <p>This is a food delivery and chef-booking platform, where users can not only order food but also book a chef to cook at their location. The platform is designed using responsive web development techniques for an optimized user experience across devices. It includes various features like searching restaurants, booking chefs, and real-time delivery tracking, providing a comprehensive service for food lovers and home chefs alike.</p>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Choose how you'd like to connect:</p>
+            <div class="contact-options">
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/urstrulysathishkumar" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/sathish-kumar-0ba11120a" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- Gmail Icon -->
+                <a href="mailto:mesathishkumar2025@gmail.com" target="_blank">
+                    <i class="fab fa-google"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sathish Kumar S. All rights reserved.</p>
+    </footer>
+
+    <!-- Font Awesome Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
